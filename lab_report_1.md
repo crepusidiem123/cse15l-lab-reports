@@ -6,4 +6,6 @@
 
 In order to download to Visual Studio Code (which will be refered as VScode thereafter), we would need to first go to its website https://code.visualstudio.com/ to download the corresponding version of it based on the current operating system. After installment, you'd be able to see a window like this if you open VScode:
 
-![Image](VScode.png)
+![Image](VSCode.png)
+
+## Remote Connection
