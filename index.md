@@ -1,2 +1,2 @@
 **Greetings Spring Quarter!**
-*Greetings Spreing Quarter!#
+*Greetings Spreing Quarter!*
