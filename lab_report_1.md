@@ -27,3 +27,18 @@ With your VScode window open, use the Terminal → New Terminal menu option to c
 If the output come up on your laptop, don't worry about it and ask your instructor or TA immediately, as they may allow you to work on the computers in those labs on campus. Normally, the output shall be as follows:
 
 ![Image](remote_control_2.png)
+
+## Trying Commands Out!
+
+Here are some commands for you to try out when you have successfully connected to the remote computer:
+
+* cat <path1> <path2> ... - “Concatenate” Used to print the contents of one or more files given by the paths
+* ls <path> - “List” Used to list the files and folders the given path
+* pwd - “Print working directory” Used to display the current working directory
+* cd <path> - “Change Directory” Used to switch the current working directory to the given path (without an argument, cd is equivalent to cd ~, which is the home directory)
+
+In case any of you would be interested to see an error, an example would be to invoke a file that does not exist, which is also reflected through the set of commands below:
+  
+![Image](commands.jpg)
+  
+*That's all for the tutorial, now you are more than welcomed to navigate and explore this brave new world!*
