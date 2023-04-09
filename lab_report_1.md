@@ -21,3 +21,7 @@ Then, you would use ssh comand to connect to the ieng6 account. The format of ss
 With which "zz" shall be adjusted to correspond to your own course-specific account, which could be looked up by https://sdacs.ucsd.edu/~icc/index.php, and you are supposed to set up a password for this course-specific account as well, by which there's also a tutorial for: https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view\
 
 With your VScode window open, use the Terminal → New Terminal menu option to create a new terminal, in which you will type in the ssh command shown above.
+
+![Image](remote_control_2.png)
+
+If 
