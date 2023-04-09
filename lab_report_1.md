@@ -22,6 +22,8 @@ With which "zz" shall be adjusted to correspond to your own course-specific acco
 
 With your VScode window open, use the Terminal → New Terminal menu option to create a new terminal, in which you will type in the ssh command shown above.
 
-![Image](remote_control_2.png)
+![Image](remote_control_1.png)
 
-If 
+If the output come up on your laptop, don't worry about it and ask your instructor or TA immediately, as they may allow you to work on the computers in those labs on campus. Normally, the output shall be as follows:
+
+![Image](remote_control_2.png)
