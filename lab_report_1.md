@@ -24,7 +24,7 @@ With your VScode window open, use the Terminal → New Terminal menu option to c
 
 ![Image](remote_control_1.png)
 
-If the output come up on your laptop, don't worry about it and ask your instructor or TA immediately, as they may allow you to work on the computers in those labs on campus. Normally, the output shall be as follows:
+If this output above comes up on your laptop, don't panic and ask your instructor or TA immediately, as they may allow you to work on the computers in those labs on campus. Normally, the output shall be as follows:
 
 ![Image](remote_control_2.png)
 
