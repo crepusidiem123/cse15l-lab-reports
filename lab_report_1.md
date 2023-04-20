@@ -28,6 +28,10 @@ If this output above comes up on your laptop, don't panic and ask your instructo
 
 ![Image](remote_control_2.png)
 
+Given this is not a screenshot based on its inablity to be reproduced, here's a screenshot of the output of a normal login after your first successful login:
+
+<img width="401" alt="image" src="https://user-images.githubusercontent.com/130092052/233507583-c5929962-38a5-46b3-91d8-be10cc0c143f.png">
+
 ## Trying Commands Out!
 
 Here are some commands for you to try out when you have successfully connected to the remote computer:
