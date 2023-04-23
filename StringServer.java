@@ -10,16 +10,18 @@ class Handler implements URLHandler{
             return new String("This is a String server that allows you to add string segments to be displayed.");
         } 
         else if (url.getPath().contains("/add-message")) {
+            output = "";
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
                 store.add(parameters[1]);
             }
             for(String i:store){
                 if(i != null){
-                    output += i + "\n"  
+                    output += i + "\n";
                 }  
             }
             return output;
+        }
         else    
             return "404 Not Found!";
     }
