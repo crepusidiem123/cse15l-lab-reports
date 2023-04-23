@@ -54,24 +54,16 @@ When running this code with the port 1024, two implementation of "add-message" c
 For the first case:
   
 * The method handleRequest is invoked with the specific subcase "else if"
-* The value of "getPath()" is "/add-message" and the value of "getQuery()" is "s=CSE15L", and the arraylist store initially does not store any values, so does the string output.
+* The value url is http://localhost:1024/add-message?s=CSE15L, which leads to its "getPath()" is "/add-message" and the value "getQuery()" is "s=CSE15L", and the arraylist store initially does not store any values, so does the string output.
 * The values of arraylist store changes by having string "CSE15L" as its first position, and the value of output into "CSE15L\n"
 
 For the second case:
 
 * The method handleRequest is invoked with the specific subcase "else if"
-* The value of "getPath()" is "/add-message" and the value of "getQuery()" is "s=CSE15LSP23", and the arraylist store initially stores string "CSE15L" as its first position, and output initially stores "CSE15L\n".
+* The value url is http://localhost:1024/add-message?s=CSE15LSP23, The value of "getPath()" is "/add-message" and the value "getQuery()" is "s=CSE15LSP23", and the arraylist store initially stores string "CSE15L" as its first position, and output initially stores "CSE15L\n".
 * The values of arraylist store changes by having string "CSE15LSP23" as its second position, and the value of output into "CSE15L\nCSE15LSP23\n"
 
-## Remote Connection
-
-In order to have remote access, prerequisite is that the VScode is equipped with git bash. Refer to this tutorial to [set up the git bash for VScode](https://stackoverflow.com/questions/42606837/how-do-i-use-bash-on-windows-from-the-visual-studio-code-integrated-terminal/50527994#50527994).
-
-Then, you would use ssh comand to connect to the ieng6 account. The format of ssh command shall be 
-
-*ssh cs15lsp23zz@ieng6.ucsd.edu*
-
-With which "zz" shall be adjusted to correspond to your own course-specific account, which could be looked up by [This Link](https://sdacs.ucsd.edu/~icc/index.php), and you are supposed to set up a password for this course-specific account as well, by which there's also a [tutorial](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view\).
+## Part 2
 
 With your VScode window open, use the Terminal → New Terminal menu option to create a new terminal, in which you will type in the ssh command shown above.
 
