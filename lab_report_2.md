@@ -65,29 +65,88 @@ For the second case:
 
 ## Part 2
 
-With your VScode window open, use the Terminal → New Terminal menu option to create a new terminal, in which you will type in the ssh command shown above.
+**Failure-inducing Input**
+```
+public class LengthChecker implements StringChecker{
+        @Override
+        public boolean checkString(String s){
+            if (s.length()>3)
+                return true;
+            return false;
+        }
 
-![Image](remote_control_1.png)
+    }
+    
+    @Test
+    public void filterTest1(){
+        List<String> input = new ArrayList<>();
+        input.add("Hello");
+        input.add("Hi");
+        input.add("How are you today");
+        List<String> expectedOutput = new ArrayList<>();
+        expectedOutput.add("Hello");
+        expectedOutput.add("How are you today");
+        assertEquals(expectedOutput, ListExamples.filter(input, new LengthChecker()));
+    }
+```
 
-If this output above comes up on your laptop, don't panic and ask your instructor or TA immediately, as they may allow you to work on the computers in those labs on campus. Normally, the output shall be as follows:
+**Non Failure-inducing Input**
+```
+public class LengthChecker implements StringChecker{
+        @Override
+        public boolean checkString(String s){
+            if (s.length()>3)
+                return true;
+            return false;
+        }
 
-![Image](remote_control_2.png)
+    }
+    
+    @Test
+    public void filterTest1(){
+        List<String> input = new ArrayList<>();
+        input.add("Hello");
+        input.add("Hi");
+        List<String> expectedOutput = new ArrayList<>();
+        expectedOutput.add("Hello");
+        assertEquals(expectedOutput, ListExamples.filter(input, new LengthChecker()));
+    }
+```
 
-Given this is not a screenshot based on its inablity to be reproduced, here's a screenshot of the output of a normal login after your first successful login:
+**Sympotoms for those two inputs**
 
-<img width="401" alt="image" src="https://user-images.githubusercontent.com/130092052/233507583-c5929962-38a5-46b3-91d8-be10cc0c143f.png">
+Test for failure-inducing input:
+<img width="582" alt="image" src="https://user-images.githubusercontent.com/130092052/233889825-6c00d211-fb0d-4fb5-a906-88d09659173b.png">
 
-## Trying Commands Out!
+Test for non failure-inducing input:
+<img width="564" alt="image" src="https://user-images.githubusercontent.com/130092052/233890001-843a9bb0-9bc5-4d4b-9f3d-02311043d888.png">
 
-Here are some commands for you to try out when you have successfully connected to the remote computer:
+**Fixing the bug**
 
-* cat <path1> <path2> ... - “Concatenate” Used to print the contents of one or more files given by the paths
-* ls <path> - “List” Used to list the files and folders the given path
-* pwd - “Print working directory” Used to display the current working directory
-* cd <path> - “Change Directory” Used to switch the current working directory to the given path (without an argument, cd is equivalent to cd ~, which is the home directory)
+*Before fixation*
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(0, s);
+      }
+    }
+    return result;
+  }
+```
 
-In case any of you would be interested to see an error, an example would be to invoke a file that does not exist, which is also reflected through the set of commands below:
-  
-![Image](commands.jpg)
-  
+*After fixation*
+```
+static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+
 *That's all for the tutorial, now you are more than welcomed to navigate and explore this brave new world!*
