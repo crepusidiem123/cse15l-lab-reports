@@ -149,4 +149,8 @@ static List<String> filter(List<String> list, StringChecker sc) {
   }
 ```
 
-*That's all for the tutorial, now you are more than welcomed to navigate and explore this brave new world!*
+The code after fixation changes the argument of add from "0,s" to "s", which does not change the order of the arraylist after filter. The reason behind this is that the original code, after confirming that the certain element satisfies the condition, adds that certain element to the front of the returning arraylist. My fixation changes this process into adding to the end of the arraylist, prohibiting from reversing the arraylist after filter.
+
+## Part 3
+
+Despite my past experience on coding, I've never got a chance to have a peek at the decomposition of a website. Moreover, I've never thought about having a webpage of my own to play with. These are all valuable experiences that I have longed for a while.
