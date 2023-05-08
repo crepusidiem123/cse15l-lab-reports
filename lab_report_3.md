@@ -2,7 +2,7 @@
 
 Our focus today - *grep* command and its command-line options
 
-* "-i": Ignore case distinctions in the pattern and input files.
+* "-i": Ignore case distinctions in the pattern and input files. (Advised by ChatGPT)
 
 `grep -i "in a different terminal" technical/911report/chapter-1.txt`
 
@@ -12,7 +12,7 @@ Our focus today - *grep* command and its command-line options
 
 <img width="856" alt="image" src="https://user-images.githubusercontent.com/130092052/236887048-a5afb034-ce5d-46fa-ac67-40eed9c86af9.png">
 
-* "-r": Search for the pattern recursively in all files under the specified directory.
+* "-r": Search for the pattern recursively in all files under the specified directory. (Advised by ChatGPT)
 
 `grep -r "chapter 11" technical/911report/`
 
@@ -22,7 +22,7 @@ Our focus today - *grep* command and its command-line options
 
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/130092052/236887912-6615ebb7-663e-4960-b560-565b0fc82261.png">
 
-* "-w": Match only whole words.
+* "-w": Match only whole words. (Advised by ChatGPT)
 
 `grep -w  "ifferent terminal" technical/911report/*`
 
@@ -32,10 +32,11 @@ Our focus today - *grep* command and its command-line options
 
 <img width="948" alt="image" src="https://user-images.githubusercontent.com/130092052/236888859-2a599f36-dbb0-4bf2-ad98-698a3853c1c9.png">
 
-* "-n": Prefix each line of output with the line number within its input file.
+* "-n": Prefix each line of output with the line number within its input file. (Advised by ChatGPT)
 
 `grep -n "arm" technical/911report/Chapter-1.txt`
 Part of its output is shown below:
+
 <img width="938" alt="image" src="https://user-images.githubusercontent.com/130092052/236890380-d14096aa-dbd0-4b7c-b148-976219078ef3.png">
 
 `grep -n "ifferent terminal" technical/911report/*`
