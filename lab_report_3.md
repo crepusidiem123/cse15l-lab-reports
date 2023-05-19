@@ -1,8 +1,12 @@
 # Lab Report 3
 
-Our focus today - *grep* command and its command-line options
+Our focus today - *grep* command and its command-line options (Credit to ChatGPT)
+
+## Interaction with ChatGPT:
+<img width="546" alt="image" src="https://github.com/crepusidiem123/cse15l-lab-reports/assets/130092052/f1a3621c-cf34-4bec-8a88-d85a13cbf50c">
 
 * "-i": Ignore case distinctions in the pattern and input files. (Advised by ChatGPT)
+> Could be useful when there's different capitalizations of a certain phrase and we would want them all
 
 `grep -i "in a different terminal" technical/911report/chapter-1.txt`
 
@@ -13,6 +17,7 @@ Our focus today - *grep* command and its command-line options
 <img width="856" alt="image" src="https://user-images.githubusercontent.com/130092052/236887048-a5afb034-ce5d-46fa-ac67-40eed9c86af9.png">
 
 * "-r": Search for the pattern recursively in all files under the specified directory. (Advised by ChatGPT)
+> Could be useful when we want to search for all the files under a directory, whilst being lazy to type out all the paths to each file.
 
 `grep -r "chapter 11" technical/911report/`
 
@@ -25,6 +30,7 @@ Our focus today - *grep* command and its command-line options
 * "-w": Match only whole words. (Advised by ChatGPT)
 
 `grep -w  "ifferent terminal" technical/911report/*`
+> Could be useful when we only want a specific word while this word being a common part consituting other words.
 
 <img width="941" alt="image" src="https://user-images.githubusercontent.com/130092052/236890127-5b239f1c-287f-4386-966f-92bf191428d1.png">
 
@@ -33,6 +39,7 @@ Our focus today - *grep* command and its command-line options
 <img width="948" alt="image" src="https://user-images.githubusercontent.com/130092052/236888859-2a599f36-dbb0-4bf2-ad98-698a3853c1c9.png">
 
 * "-n": Prefix each line of output with the line number within its input file. (Advised by ChatGPT)
+> Could be useful when we want to pinpoint the exact position of the matching so that we could use vim or some other text editor to make changes, or even solely to check for the context around.
 
 `grep -n "arm" technical/911report/Chapter-1.txt`
 Part of its output is shown below:
